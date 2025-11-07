@@ -18,7 +18,7 @@ function Container(props) {
                 <div className="w-full px-3  md:w-[41.66%] flex">
                     <Card2
                         image={"./assets/images/hero-placeholder.png"}
-                    />
+                     />
                 </div>
             </div>
         </div>

@@ -1,15 +1,15 @@
 import React from 'react'
-import Container from './components/container'
-import Header from './components/header'
+import Section from './components/Section'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
     <section className="bg-[url('/assets/images/jungle-background.png')] bg-cover bg-no-repeat min-h-screen flex flex-col">
-      <Header
+      <Navbar
       img={"./assets/images/monkey-logo.png"}
       btn={"Buy Now"}
       />
-    <Container/>
+    <Section/>
     </section>
   )
 }

@@ -1,8 +1,8 @@
 import React from 'react'
-import Card1 from './card1'
+import Card1 from './Card1'
 import Card2 from './card2'
 
-function Container(props) {
+function Section(props) {
     return (
 
         <div className="max-w-[1140px] mx-auto px-3">
@@ -27,4 +27,4 @@ function Container(props) {
     )
 }
 
-export default Container
+export default Section

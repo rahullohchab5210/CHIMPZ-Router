@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { SOCIAL_ICONS } from "../icon";
-import { Navlinks } from "./navlinks";
+import { Navlinks } from "./Navlinks";
 
-function Header(props) {
+function Navbar(props) {
     const [menuOpen, setMenuOpen] = useState(null);
 
     return (
@@ -52,4 +52,4 @@ function Header(props) {
     );
 }
 
-export default Header;
+export default Navbar;

@@ -1,6 +1,7 @@
 import React from 'react'
 import Section from './components/Section'
 import Navbar from './components/Navbar'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       img={"./assets/images/monkey-logo.png"}
       btn={"Buy Now"}
       />
-    <Section/>
+      <Outlet/>
     </section>
   )
 }

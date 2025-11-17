@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { SOCIAL_ICONS } from "../icon";
-import { Navlinks } from "./Navlinks";
+import { SOCIAL_ICONS } from "./icon";
+ 
+import { NavLink } from "react-router-dom";
 
 function Navbar(props) {
     const [menuOpen, setMenuOpen] = useState(null);
+    const navlinks = ["home", "about", "buy", "tokenomics", "roadmap"];
 
     return (
         <header className="py-6 bg-[linear-gradient(180deg,#000000_36.19%,rgba(0,0,0,0)_100%)]">
@@ -30,13 +32,15 @@ function Navbar(props) {
 
                                 <div className={`menu-links flex items-center justify-between w-full gap-2.5 lg:gap-0 max-lg:flex-col max-lg:items-center max-lg:justify-center max-[1024px]:fixed max-[1024px]:bg-[#00000080] max-[1024px]:backdrop-blur-[10px] max-[1024px]:h-full max-[1024px]:w-full max-[1024px]:top-0 max-[1024px]:transition-all max-[1024px]:duration-300 max-[1024px]:ease-linear z-1 ${menuOpen === "show" ? "max-[1024px]:right-0" : "max-[1024px]:-right-full"}`} >
                                     <nav className="flex items-center gap-10 justify-center w-full max-lg:flex-col max-lg:items-center">
-                                        {Navlinks.map((link, i) => (
-                                            <a key={i} href="#" className="text-white/70 font-normal text-[16px] font-[Fira_Sans,sans-serif] hover:text-white max-lg:hover:bg-blue-500 px-4 py-2">{link}</a>
-                                        ))}
+                                        {navlinks.map((link, i) => <NavLink className={({ isActive }) => `text-white/70 capitalize font-normal text-[16px] font-[Fira_Sans,sans-serif] hover:text-white max-lg:hover:bg-blue-500 px-4 py-2
+                                        ${isActive && 'text-white/100'}`} key={i} to={link == 'home' ? '/' : link}>
+                                                {link == 'buy' ? 'how to buy': link}
+                                                </NavLink>
+                                        )}
                                     </nav>
                                     <div className="flex items-center gap-2">
                                         {SOCIAL_ICONS.map((icon, i) => (
-                                            <a key={i} href="#" className="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center">{icon}</a>
+                                            <a key={i} href="#" className="w-8 h-8 border-2 border-white rounded-full flex items-center justify-center group">{icon}</a>
                                         ))}
                                     </div>
                                 </div>
@@ -53,3 +57,5 @@ function Navbar(props) {
 }
 
 export default Navbar;
+
+// text-white/70 font-normal text-[16px] font-[Fira_Sans,sans-serif] hover:text-white max-lg:hover:bg-blue-500 px-4 py-2

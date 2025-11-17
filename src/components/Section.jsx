@@ -1,6 +1,7 @@
 import React from 'react'
-import Card1 from './Card1'
-import Card2 from './card2'
+import Card1 from "./Card1.jsx";
+import Card2 from "./Card2.jsx";
+
 
 function Section(props) {
     return (

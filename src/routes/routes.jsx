@@ -3,7 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../pages/Home";
 import About from "../pages/About";
-import HowToBuy from "../pages/HowToBuy";
+ import HowToBuy from "../pages/Howtobuy";
 import Tokenomics from "../pages/Tokenomics";
 import Roadmap from "../pages/Roadmap";
 

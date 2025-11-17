@@ -3,7 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../pages/Home";
 import About from "../pages/About";
- import HowToBuy from "../pages/Howtobuy";
+import HowToBuy from "../pages/Howtobuy";
 import Tokenomics from "../pages/Tokenomics";
 import Roadmap from "../pages/Roadmap";
 
@@ -20,7 +20,6 @@ const routes = createBrowserRouter([
             { path: '/buy', element: <HowToBuy /> },
             { path: '/tokenomics', element: <Tokenomics /> },
             { path: '/roadmap', element: <Roadmap /> },
-
         ]
 
     },

@@ -1,15 +1,15 @@
 import React from 'react'
-import Card1 from "./Card1.jsx";
-import Card2 from "./Card2.jsx";
 
+import CardOne from './CardOne'
+import CardTwo from './CardTwo'
 
-function Section(props) {
+function Section() {
     return (
 
         <div className="max-w-[1140px] mx-auto px-3">
             <div className="flex flex-row flex-wrap -px-3 grow items-center justify-center">
                 <div className="w-full px-3 md:w-[58.33%]">
-                    <Card1
+                    <CardOne
                         text={"APE TOGETHER STRONG"}
                         chimpz={"CHIMPZ"}
                         heading={" A Green Revolution for Your Wallet"}
@@ -17,9 +17,9 @@ function Section(props) {
                     />
                 </div>
                 <div className="w-full px-3  md:w-[41.66%] flex">
-                    <Card2
+                    <CardTwo
                         image={"./assets/images/hero-placeholder.png"}
-                     />
+                    />
                 </div>
             </div>
         </div>

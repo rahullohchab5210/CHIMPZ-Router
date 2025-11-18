@@ -1,7 +1,6 @@
 import React from 'react'
 import CardOne from './CardOne'
-import CardTwo from './CardTwo'
-
+import HeroImg from '../assets/images/hero-placeholder.png'
 function Section() {
     return (
         <div className='flex grow items-center justify-center'>
@@ -16,9 +15,17 @@ function Section() {
                         />
                     </div>
                     <div className="w-full px-3  md:w-[41.66%] flex">
-                        <CardTwo
-                            image={"./src/assets/images/hero-placeholder.png"}
-                        />
+                        <div className='overflow-hidden'>
+                            <img src={HeroImg} alt="gorilla-picture" className="w-full overflow-hidden   animate-[move_1s_linear_infinite_alternate_both]" />
+
+                            <style>{`
+        @keyframes move {
+          0% { transform: translate(0px, 0px); }
+          100% { transform: translate(30px, 30px); }
+        }
+      `}</style>
+
+                        </div>
                     </div>
                 </div>
             </div>

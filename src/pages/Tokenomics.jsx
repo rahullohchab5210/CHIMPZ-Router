@@ -2,7 +2,6 @@ import React from 'react'
 
 function Tokenomics() {
   return (
-
     <div className="max-w-[1140px] mx-auto px-3">
       <div className="flex flex-col flex-wrap -px-3 grow ">
         <div className="w-full px-3 md:w-[58.33%]">

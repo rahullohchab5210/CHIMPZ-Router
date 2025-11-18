@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logoImg from "../assets/images/monkey-logo.png"
-import { SOCIAL_ICONS } from "./icon";
-import Button from "./button";
+import Button from "./Btn";
+import { SOCIAL_ICONS } from "../icon";
+ 
  
 
 function Navbar(props) {

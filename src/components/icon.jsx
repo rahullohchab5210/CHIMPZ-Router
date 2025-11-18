@@ -1,4 +1,4 @@
-export const DISCORD_ICON = () => {
+const DISCORD_ICON = () => {
     return (
         <svg className="group-hover:w-6 group-hover:h-5" width="18" height="14" viewBox="0 0 18 14"
             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -8,7 +8,7 @@ export const DISCORD_ICON = () => {
         </svg>
     )
 }
-export const TELEGRAM_ICON = () => {
+const TELEGRAM_ICON = () => {
     return (
         <svg className="group-hover:w-6 group-hover:h-5" width="16" height="17" viewBox="0 0 16 17"
             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +18,7 @@ export const TELEGRAM_ICON = () => {
         </svg>
     )
 }
-export const TWITTER_ICON = () => {
+const TWITTER_ICON = () => {
     return (
         <svg className="group-hover:w-6 group-hover:h-5" width="18" height="16" viewBox="0 0 18 16"
             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +30,16 @@ export const TWITTER_ICON = () => {
 }
 
 export let SOCIAL_ICONS = [
-    <DISCORD_ICON />,
-    <TELEGRAM_ICON />,
-    <TWITTER_ICON />
+    {
+        icon: <DISCORD_ICON />,
+        url: "https://discord.com/"
+    },
+    {
+        icon: <TELEGRAM_ICON />,
+        url: "https://telegram.org/"
+    },
+    {
+        icon: <TWITTER_ICON />,
+        url: "https://x.com/"
+    }
 ];

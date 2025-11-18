@@ -5,9 +5,9 @@ import CardTwo from './CardTwo'
 
 function Section() {
     return (
-
+              <div className='flex grow items-center justify-center'> 
         <div className="max-w-[1140px] mx-auto px-3">
-            <div className="flex flex-row flex-wrap -px-3 grow items-center justify-center">
+            <div className="flex flex-row flex-wrap -mx-3 items-center ">
                 <div className="w-full px-3 md:w-[58.33%]">
                     <CardOne
                         text={"APE TOGETHER STRONG"}
@@ -18,9 +18,10 @@ function Section() {
                 </div>
                 <div className="w-full px-3  md:w-[41.66%] flex">
                     <CardTwo
-                        image={"./assets/images/hero-placeholder.png"}
+                            image={"./src/assets/images/hero-placeholder.png"}
                     />
                 </div>
+            </div>
             </div>
         </div>
 

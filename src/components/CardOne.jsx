@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Card1(props) {
+function CardOne(props) {
   return (
     <div className="bg-[linear-gradient(180deg,rgba(255,255,255,0)_0%,rgba(255,255,255,0.01)_85.54%,rgba(255,255,255,0)_100%)] backdrop-blur-[3px]">
       <span className="text-white leading-[150%] font-medium text-[16px] font-[Roboto,sans-serif] ">{props.text}</span>
@@ -10,4 +10,4 @@ function Card1(props) {
   )
 }
 
-export default Card1
+export default CardOne
